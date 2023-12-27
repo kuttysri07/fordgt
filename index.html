@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Ford-Logo.png">
+    <title>FORD</title>
+</head>
+
+<style>
+    body{
+        padding: 0;
+        margin: 0;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        box-sizing: border-box;    
+    }
+
+    .container{
+        height: 100vh;
+        width: 100%;
+        background-image:linear-gradient(rgba(7, 3, 3, 0.264),rgba(0, 0, 0, 0.812));
+        position: relative;
+    }
+
+
+    nav{
+        position: relative;
+        padding: 15px 6%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav ul li{
+        display: inline;
+        padding: 15px;
+        list-style: none;
+        transition: background-color .2s ease-in-out,border .2s ease-in-out,border-radius .2s ease-in-out;
+        
+    }
+
+    nav ul li a{
+        text-decoration: none;
+        color: white;
+
+    }
+
+    video{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit:cover;
+        z-index: -2;
+      
+    }
+    h1{
+        font-size: 7rem;
+        color: white;
+        padding: 10px 6%;
+
+    }
+    span{
+        color:yellow;
+    }
+
+    
+    
+    nav ul li:hover{
+        background-color: black;
+        border-radius: 10px;
+        border: 1px solid white;
+    }
+
+</style>
+<body>
+    
+    <div class="container">
+        <video src="pexels-fernando-gomez-cortes-15620177 (720p).webm" autoplay muted loop></video>
+        <nav>
+            <img src="Ford-Logo.png" alt=""  height="100px">
+            <ul>
+                <li><a class="btn" href="">Login</a></li>
+                <li><a class="btn" href="">Signup</a></li>
+            </ul>
+        </nav>
+
+        <h1>FORD <br><span>GT </span><br> MUSTANG</h1>
+    </div>
+    
+</body>
+</html>
